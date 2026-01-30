@@ -23,5 +23,7 @@ def build_superpoints(points, radius=0.2, min_pts=30, max_pts=300):
 
         idx = idx[:max_pts]
         visited[idx] = True
+
+        superpoints.append(idx)
         
-        yield idx
+    return superpoints
